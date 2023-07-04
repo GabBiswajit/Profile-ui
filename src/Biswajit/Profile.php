@@ -47,7 +47,7 @@ class Profile extends PluginBase {
         $p = $sender;
         $name = $p->getName();
         $rank = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUserDataMgr()->getGroup($p)->getName();
-        $eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
+        $eco = $this->getServer()->getPluginManager()->getPlugin("BedrockEconomy");
         $date = date("d/m/Y H:i:s");
         $money = $eco->balance($p);
         $ping = $p->getNetworkSession()->getPing();
