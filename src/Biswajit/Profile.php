@@ -49,7 +49,7 @@ class Profile extends PluginBase {
         $rank = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUserDataMgr()->getGroup($p)->getName();
         $eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $date = date("d/m/Y H:i:s");
-        $money = $eco->myMoney($p);
+        $money = $eco->balance($p);
         $ping = $p->getNetworkSession()->getPing();
         $world = $p->getWorld()->getProvider()->getWorldData()->getName();
         $x = $p->getPosition()->getX();
