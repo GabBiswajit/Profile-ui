@@ -1,0 +1,15 @@
+name: ProfileUI
+main: Biswajit\Profile
+api: 5.0.0
+author: Biswajit
+version: 1.0.2
+
+commands:
+  profile:
+    description: Use Command To Check Your Profile Stats
+    permission: stats.cmd
+
+permissions:
+  stats.cmd:
+    description: ProfileUI Permission
+    default: true
