@@ -49,7 +49,7 @@ class Profile extends PluginBase {
         $eco = Server::getInstance()->getPluginManager()->getPlugin("BedrockEconomy")->getAPI();
         $economy->getPlayerBalance($player->getName(),
         ClosureContext::create(function (?int $balance) use($player): void {
-        $this->playerMoney = $balance }, ));
+        $this->playerMoney = $balance; }, ));
         $date = date("d/m/Y H:i:s");
         $ping = $p->getNetworkSession()->getPing();
         $world = $p->getWorld()->getProvider()->getWorldData()->getName();
