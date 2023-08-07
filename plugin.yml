@@ -3,6 +3,7 @@ main: Biswajit\Profile
 api: 5.0.0
 author: Biswajit
 version: 1.0.0
+depend: BedrockEconomy
 
 commands:
   profile:
