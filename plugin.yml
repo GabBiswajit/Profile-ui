@@ -3,7 +3,9 @@ main: Biswajit\ProfileUI\Profile
 api: 5.0.0
 author: Biswajit
 version: 1.0.0
-depend: BedrockEconomy
+depend: 
+- BedrockEconomy
+- PurePerms
 
 commands:
   profile:
