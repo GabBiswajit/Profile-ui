@@ -6,6 +6,7 @@ use pocketmine\Server;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use jojoe77777\FormAPI\SimpleForm;
+use _64FF00\PurePerms\PurePerms;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use cooldogedev\BedrockEconomy\libs\cooldogedev\libSQL\context\ClosureContext;
@@ -42,13 +43,16 @@ class Profile extends PluginBase {
              }
 
         });
-
+        $purePerms = Server::getInstance()->getPluginManager()->getPlugin("PurePerms");
+            if (!$purePerms instanceof PurePerms) {
+                return;
+            }
         $p = $sender;
         $name = $p->getName();
-        $rank = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUserDataMgr()->getGroup($p)->getName();
+        $rank = $purePerms->getUserDataMgr()->getData($name)["group"];
         $eco = Server::getInstance()->getPluginManager()->getPlugin("BedrockEconomy")->getAPI();
         $economy->getPlayerBalance($player->getName(),
-        ClosureContext::create(function (?int $balance) use($player): void {
+        ClosureContext::create(function (?int $balance) use($name): void {
         $this->playerMoney = $balance; }, ));
         $date = date("d/m/Y H:i:s");
         $ping = $p->getNetworkSession()->getPing();
