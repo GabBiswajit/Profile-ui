@@ -10,9 +10,9 @@ depend:
 commands:
   profile:
     description: Use Command To Check Your Profile Stats
-    permission: profileui.cmd.use
+    permission: ProfileUI.cmd.use
 
 permissions:
-  profileui.cmd.use:
+  ProfileUI.cmd.use:
     description: ProfileUI Permission
     default: true
