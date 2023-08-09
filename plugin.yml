@@ -2,7 +2,7 @@ name: ProfileUI
 main: Biswajit\ProfileUI\Profile
 api: 5.0.0
 author: Biswajit
-version: 1.0.0
+version: 1.0.1
 softdepend: ["BedrockEconomy", "EconomyAPI", "PurePerms"]
 
 commands:
