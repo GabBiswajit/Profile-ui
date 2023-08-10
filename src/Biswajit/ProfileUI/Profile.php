@@ -7,8 +7,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as TF;
-use Biswajit\ProfileUI\libs\jojoe77777\FormAPI\SimpleForm;
-use Biswajit\ProfileUI\libs\davidglitch04\libEco\libEco;
+use jojoe77777\FormAPI\SimpleForm;
+use davidglitch04\libEco\libEco;
 
 class Profile extends PluginBase {
 
