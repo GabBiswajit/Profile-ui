@@ -3,7 +3,7 @@ main: Biswajit\ProfileUI\Profile
 api: 5.0.0
 author: Biswajit
 version: 1.1.0
-softdepend: ["BedrockEconomy", "EconomyAPI", "PurePerms"]
+softdepend: ["BedrockEconomy", "EconomyAPI", "PurePerms", "RankSystem"]
 
 commands:
   profile:
