@@ -3,7 +3,7 @@ A Player Profile Plugin For Pocketmine !
 ![IMG_20230810_095116](https://github.com/GabBiswajit/Profile-ui/assets/121815367/f8225602-466f-4b80-adc8-91a04b8dd73c)
 
 ## Function 
-- Its A Ui Plugin With Show Player Information In Server Lik : Rank, Money, Ping, Position, Frist Join Time, Experience!
+- Its A Ui Plugin With Show Player Information In Server Like : Rank, Money, Ping, Position, Frist Join Time, Experience!
 
 ## Support
 - This Plugin Supporting Economy Plugins Is : `EconomyAPI` And `BedrockEconomy` !
